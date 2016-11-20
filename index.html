@@ -6,35 +6,29 @@
     <title>Quick FLICK</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-    <script src="mejs/jquery.js"></script>
-    <script src="mejs/mediaelement-and-player.min.js"></script>
-    <link rel="stylesheet" href="mejs/mediaelement-and-player.min.css"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="mejs/mejs-skins.css">
   </head>
   <body>
-    <h1>Media-Element</h1>    
-    <div class="wrapper">     
-      <h2>Rafael's video</h2>
-      <video class="mejs/wmp" width="652" height="380" controls>
+    <h1>HTML Video and Audio</h1>    
+    
+    <div class="wrapper">      
+    
+      <h2>Rafael's video</h2> 
+
+      <video controls>
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
-        <track label="English" kind="subtitles" srclang="en"  src="bridge-captions.vtt" >
+        <track label="English" kind="subtitles" srclang="en"  src="bridge-captions.vtt" default>
       </video>
-      <h2>Audio Example</h2>
+
+      <h2>Audio Example</h2> 
+
       <audio controls> 
        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">        
-      </audio> 
+      </audio>    
+
     </div>
-     <script>
-       $('audio,video').mediaelementplayer({ 
-         success: function(player, node) {
-           $('#' + node.id + '-mode').html('mode: ' + player.plugintype);
-         }, 
-         startLanguage: 'en'
-         translationSelector: true      
-       });
-     </script>
+
   </body>
 </html>
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,19 +10,19 @@
     <script src="mejs/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="mejs/mediaelement-and-player.min.css"/>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="mejs/mejs-skins.css">
+    <link rel="stylesheet" href="css/treehouse-skin.css">
   </head>
   <body>
     <h1>Media-Element</h1>    
     <div class="wrapper">     
       <h2>Rafael's video</h2>
-      <video class="mejs/wmp" width="652" height="380" controls>
+      <video class="mejs/treehouse" width="652" height="380" controls>
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
         <track label="English" kind="subtitles" srclang="en"  src="bridge-captions.vtt" >
       </video>
       <h2>Audio Example</h2>
-      <audio controls> 
+      <audio controls="mejs/treehouse" controls> 
        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">        
       </audio> 
     </div>
